@@ -1,12 +1,25 @@
 ﻿using System;
+using System.Collections;
 
 namespace Pila_con_Letras
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main()
         {
-            Console.WriteLine("Hello World!");
+            string palabra;
+            Stack miPila = new Stack();
+            miPila.Push("Hola");
+            miPila.Push("soy");
+            miPila.Push("yo");
+             for(byte i=0; i < 3; i++)
+            {
+                palabra = (string)miPila.Pop();
+                Console.WriteLine(palabra);
+                Console.ReadKey();
+            }
+
+            
         }
     }
 }
